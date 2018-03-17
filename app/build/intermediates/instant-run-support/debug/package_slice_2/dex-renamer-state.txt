@@ -1,0 +1,4 @@
+#Sun Mar 11 23:09:10 CST 2018
+base.0=D\:\\AndroidProject\\Firebase_Example\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex

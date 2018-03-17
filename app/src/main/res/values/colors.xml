@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003f8c</color>
+    <color name="colorPrimaryDark">#003576</color>
+    <color name="colorAccent">#3d8ef2</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777777</color>
+    <color name="timestamp">#777</color>
+    <color name="club_name">#51a8ff</color>
+    <color name="club_act_time">#0060c1</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="icon_tint_selected">#fd2229</color>
+    <color name="content">#222222</color>
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="message">#7a7a7a</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="bg_action_mode">#757575</color>
+    <color name="bg_circle_default">#666666</color>
+    <color name="event_info">#003f8c</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>

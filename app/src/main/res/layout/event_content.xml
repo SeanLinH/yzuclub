@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="15dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/event_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/event_intro"
+            android:textSize="@dimen/event_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/event_intro_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_intro"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_intro_content"
+            android:paddingTop="10dp"
+            android:text="宣傳影片"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <fragment
+            android:id="@+id/youtube_fragment"
+            android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

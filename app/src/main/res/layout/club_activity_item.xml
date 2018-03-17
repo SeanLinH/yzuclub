@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:clipToPadding="false"
+            android:theme="@style/CardView.Dark"
+            card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/club_act_activity_thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="143dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            card_view:layout_constraintBottom_toTopOf="@+id/gridLayout"
+                            card_view:layout_constraintTop_toTopOf="parent"
+                            card_view:layout_constraintVertical_bias="0.0"
+                            card_view:srcCompat="@mipmap/logo"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <GridLayout
+                            android:id="@+id/gridLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/club_act_activity_thumbnail"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            card_view:layout_constraintEnd_toEndOf="parent"
+                            card_view:layout_constraintHorizontal_bias="0.0"
+                            card_view:layout_constraintStart_toStartOf="parent"
+                            card_view:layout_constraintTop_toBottomOf="@+id/club_act_activity_thumbnail">
+
+                                <LinearLayout
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="25dp"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="·"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/club_name"
+                                                    android:textSize="18sp" />
+
+                                                <TextView
+                                                    android:id="@+id/club_act_activity_club_name"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:clickable="true"
+                                                    android:text="社團"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/club_name"
+                                                    android:textStyle="bold"
+                                                    android:focusable="true" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:text="·"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/club_name"
+                                                    android:textSize="18sp" />
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/club_act_activity_date"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="日期"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/club_act_time"
+                                            android:textSize="24sp"
+                                            android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/club_act_activity_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="活動名稱"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/description"
+                                            android:textStyle="bold" />
+
+                                        <Space
+                                            android:layout_width="match_parent"
+                                            android:layout_height="5dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/club_act_activity_time"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:text="時間"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/description" />
+
+                                                <TextView
+                                                    android:id="@+id/editText"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:text=" | "
+                                                    android:textAlignment="center"
+                                                    android:textSize="18sp" />
+
+                                                <TextView
+                                                    android:id="@+id/club_act_activity_location"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:text="地點"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/description" />
+                                        </LinearLayout>
+                                        <!--<TextView-->
+                                        <!--android:id="@+id/club_act_activity_location"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="地點"-->
+                                        <!--android:textAlignment="center"-->
+                                        <!--android:textColor="@color/description" />-->
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="wrap_content" />
+
+                                <ToggleButton
+                                    android:id="@+id/club_act_activity_collection"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/toggle_selector"
+                                    android:scaleX="0.6"
+                                    android:scaleY="0.6"
+                                    android:textColor="@drawable/toggle_text_color"
+                                    android:textOff="收藏"
+                                    android:textOn="收藏"
+                                    android:textSize="24sp"
+                                    tools:layout_editor_absoluteX="256dp"
+                                    tools:layout_editor_absoluteY="143dp" />
+
+                        </GridLayout>
+                </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

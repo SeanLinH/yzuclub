@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <com.github.vipulasri.timelineview.TimelineView
+        android:id="@+id/time_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:markerSize="20dp"
+        app:lineSize="3dp"
+        app:line="@color/colorPrimary"
+        app:linePadding="5dp"/>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--app:cardElevation="1dp"-->
+        <!--app:contentPadding="15dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/text_timeline_date"-->
+                <!--android:textSize="12sp"-->
+                <!--tools:text="24 JAN"/>-->
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:id="@+id/text_timeline_title"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--tools:text="Order Successfully Completed"/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:theme="@style/CardView.Dark"
+        android:weightSum="12"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <GridLayout
+                android:id="@+id/club_act_flat_gridLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:orientation="horizontal"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/club_act_flat_activity_thumbnail">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/club_act_flat_activity_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="活動日期"
+                        android:textAlignment="center"
+                        android:textColor="@color/club_act_time"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/club_act_flat_activity_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="活動名稱"
+                        android:textAlignment="center"
+                        android:textColor="@color/description"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/club_act_flat_activity_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="時間"
+                            android:textAlignment="center"
+                            android:textColor="@color/description" />
+
+                        <TextView
+                            android:id="@+id/editText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text=" | "
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/club_act_flat_activity_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="地點"
+                            android:textAlignment="center"
+                            android:textColor="@color/description" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <ImageView
+                android:id="@+id/club_act_flat_activity_thumbnail"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                card_view:layout_constraintBottom_toTopOf="@+id/club_act_flat_gridLayout"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.0"
+                card_view:srcCompat="@mipmap/logo"
+                tools:layout_editor_absoluteX="0dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

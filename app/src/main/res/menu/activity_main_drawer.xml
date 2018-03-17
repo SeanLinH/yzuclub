@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_timeline"
+            android:icon="@mipmap/ic_timeline_black_24dp"
+            android:title="@string/nav_timeline" />
+        <item
+            android:id="@+id/nav_club"
+            android:icon="@drawable/club"
+            android:title="@string/nav_club" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/nav_notification" />
+        <!--<item-->
+            <!--android:id="@+id/nav_history"-->
+            <!--android:icon="@drawable/history"-->
+            <!--android:title="@string/nav_history" />-->
+        <item
+            android:id="@+id/nav_life_notebook"
+            android:icon="@drawable/ic_menu_life_notebook"
+            android:title="@string/nav_life_notebook" />
+    </group>
+
+    <group
+        android:id="@+id/favorite_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favorite_clubs"
+            android:title="@string/nav_favorite">
+            <menu>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/club_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage_club"
+            android:title="@string/nav_manage_club">
+            <menu>
+
+                <item
+                    android:id="@+id/manage_AIESEC"
+                    android:title="AIESEC" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/nav_about">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_share" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/mail"
+                android:title="@string/nav_contact_us" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/setting"
+                android:title="@string/nav_setting" />
+        </menu>
+    </item>
+
+</menu>

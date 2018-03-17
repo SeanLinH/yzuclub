@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\AndroidProject\\Firebase_Example\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\min\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\411408d4b626955b0a7ff303eb286fca\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    },
+                    "to": {
+                        "startLines": "9,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "443,600",
+                        "endColumns": "156,134",
+                        "endOffsets": "595,730"
+                    }
+                },
+                {
+                    "source": "D:\\AndroidProject\\Firebase_Example\\app\\src\\main\\res\\values-v24\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "448"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "438"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\min\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.1.aar\\53795673a8cf1bbafe6fd8b816c819ed\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,14",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "735,801,862,928",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "796,857,923,990"
+                    }
+                }
+            ]
+        }
+    ]
+}

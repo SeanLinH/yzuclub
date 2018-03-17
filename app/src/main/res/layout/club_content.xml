@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="15dp"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/club_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleY="1.2"-->
+            <!--android:text="@string/club_name"-->
+            <!--android:textScaleX="1.2"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/icon_favorite"-->
+            <!--android:layout_width="@dimen/icon_favorite"-->
+            <!--android:layout_height="@dimen/icon_favorite"-->
+            <!--android:layout_above="@+id/intro"-->
+            <!--android:layout_alignEnd="@+id/club_name"-->
+            <!--android:tint="@color/icon_tint_normal" />-->
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/club_intro"
+            android:textSize="@dimen/club_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/intro_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro_content"
+            android:padding="15dp"
+            android:text="宣傳影片"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/youtube_fragment"
+            android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coming_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="近期活動"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/last_activity_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/coming_event_rv"
+            android:layout_alignEnd="@+id/coming_activity"
+            android:text="@string/content_more" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/coming_event_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coming_activity"
+            android:orientation="vertical"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/past_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coming_event_rv"
+            android:paddingTop="10dp"
+            android:text="歷屆活動"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/past_activity_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/past_event_rv"
+            android:layout_alignEnd="@+id/past_activity"
+            android:text="@string/content_more" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/past_event_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/past_activity"
+            android:orientation="vertical"
+            android:paddingTop="10dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
